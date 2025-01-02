@@ -1,0 +1,63 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Know Your Sign";
+}
+
+<main>
+    <section class="mb-3 d-flex">
+        <div>
+            <h1>Know Your Sign</h1>
+            <p>Enter Your month and day of birth to find out Your Zodiac Sign.</p>
+
+            <div class="text-left">
+                <form asp-action="Index" method="post">
+                     <label for="month">Day:</label>
+                    <div class="input-group">  
+                        <input type="day" name="" id="" class="form-control">
+                    </div>
+                    <label for="month">Month:</label>
+                 
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Select birth month</option>
+                        <option value="1">January</option>
+                        <option value="2">February</option>
+                        <option value="3">March</option>
+                        <option value="4">April</option>
+                        <option value="5">May</option>
+                        <option value="6">June</option>
+                        <option value="7">July</option>
+                        <option value="8">August</option>
+                        <option value="9">September</option>
+                        <option value="10">October</option>
+                        <option value="11">November</option>
+                        <option value="12">December</option>
+                    </select>
+
+                    <div class="mt-2">
+                        <button class="btn btn-secondary me-5 px-4" type="reset">Clear</button>
+                        <button class="btn btn-primary px-4" type="submit">Find</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="container flex justify-content-center">
+        <div class="mt-5 ">
+            <p>
+                Way back when, the Babylonians got super into astronomy and 
+                basically sliced up the sun's path across the sky into 12 pieces, 
+                each with its own cool constellation. The Greeks were all, "Whoa, 
+                that's awesome!" and added their own mythological twist, turning 
+                it into a cosmic personality test. Now, everyone's obsessed with 
+                figuring out their sign and what it means for their love life, 
+                career, and basically everything else. But here's the twist: these 
+                signs aren't actually constellations, they're just 30-degree slices
+                 of the sky, and thanks to Earth's wobbly dance, those slices have 
+                 shifted around over time. So there you have it, the zodiac in a 
+                 nutshell!
+            </p>
+        </div>
+    </section>
+</main>
