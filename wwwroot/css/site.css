@@ -6,6 +6,21 @@ html {
   html {
     font-size: 16px;
   }
+  
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+  section.know{
+    padding: .5em 1em;
+  }
+
+  form{
+    margin: 2em;
+  }
+
+
 }
 
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
