@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("culio")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3a8c5b6f000f37aefc40b62bb7b9e0a466a8d3e2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8cd1cbaf88f475ca73fcfd1787c164ddd489a2be")]
 [assembly: System.Reflection.AssemblyProductAttribute("culio")]
 [assembly: System.Reflection.AssemblyTitleAttribute("culio")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
