@@ -5,15 +5,16 @@
 }
 
 <main>
+       <h1 class="text-center mt-5 fw-bold">Culio</h1>
+        <p class="text-center" id="intro">Enter Your month and day of birth to find out Your Zodiac Sign.</p>
+
     <section class="mb-3 d-flex justify-content-center mx-2 know">
         <div>
-            <h1 class="text-center mt-5">Culio</h1>
-            <p class="text-center">Enter Your month and day of birth to find out Your Zodiac Sign.</p>
 
             <div class="text-left">
                 <form asp-action="Index" method="post">
                      <label for="day">Day:</label>
-                    <div class="input-group">  
+                    <div class="input-group my-2">  
                         <input type="number" name="Day" id="day" class="form-control" min="1" max="31" placeholder="1">
                     </div>
                     <label for="month">Select Month:</label>
@@ -42,29 +43,28 @@
             </div>
             @if (!string.IsNullOrEmpty(Model.Sign) && !string.IsNullOrEmpty(Model.Desc))
             {
-                <div class="alert alert-info mt-4">
-                    <h3>@Model.Sign</h3>
-                    <p>@Model.Desc</p>
-                </div>
+                    <div class="alert alert-info mt-4">
+                        <h3>@Model.Sign</h3>
+                        <p>@Model.Desc</p>
+                    </div>
             }
 
         </div>
     </section>
-    <section class="container d-flex justify-content-center">
-        <div class="mt-5 w-75">
-            <h4>The History</h4>
+    <section class="container d-flex justify-content-center story">
+        <div class="mt-5 w-75 glass-morphism p-3">
+            <h4>What are they? 🌟</h4>
             <p>
-                Way back when, the Babylonians got super into astronomy and 
-                basically sliced up the sun's path across the sky into 12 pieces, 
-                each with its own cool constellation. The Greeks were all, "Whoa, 
-                that's awesome!" and added their own mythological twist, turning 
-                it into a cosmic personality test. Now, everyone's obsessed with 
-                figuring out their sign and what it means for their love life, 
-                career, and basically everything else. But here's the twist: these 
-                signs aren't actually constellations, they're just 30-degree slices
-                 of the sky, and thanks to Earth's wobbly dance, those slices have 
-                 shifted around over time. So there you have it, the zodiac in a 
-                 nutshell!
+                Zodiac signs are like your cosmic personality traits, 
+                with each one having its quirks. <u>Aries</u> is the fiery "let's do 
+                this!" leader, while <u>Taurus</u> is the chill lover of snacks and naps. 
+                <u>Gemini</u> is the chatty, two-faced buddy, and <u>Cancer's</u> all about hugging 
+                it out. <u>Leo</u>? Total spotlight hog. <u>Virgo's</u> the overachiever who 
+                organizes her sock drawer by color. <u>Libra's</u> the peacekeeper, 
+                always playing referee. <u> Scorpio</u> is intense—like a mystery novel 
+                in human form. <u>Sagittarius</u> loves adventure, <u>Capricorn</u> is the serious, 
+                work-hard type. <u>Aquarius</u> is the quirky genius, and <u>Pisces</u>? Well, 
+                they’re off dreaming somewhere. It’s a zodiac circus!
             </p>
         </div>
     </section>

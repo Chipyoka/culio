@@ -1,4 +1,14 @@
-﻿// Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
+﻿const intro = document.getElementById('intro');
+const text = intro.textContent;
+intro.textContent = ' ';
+let i = 0;
 
-// Write your JavaScript code.
+function typeWriter() {
+  if (i < text.length) {
+    intro.textContent += text.charAt(i);
+    i++;
+    setTimeout(typeWriter, 30);
+  }
+}
+
+window.onload = typeWriter;

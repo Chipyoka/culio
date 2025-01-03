@@ -8,19 +8,19 @@ a.navbar-brand {
 }
 
 a {
-  color: #0077cc;
+  color: #05d4fd;
 }
 
 .btn-primary {
   color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+  background-color: #05d4fd;
+  border-color: #05d4fd;
 }
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
   color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+  background-color: #05d4fd;
+  border-color: #05d4fd;
 }
 
 .border-top {
@@ -45,4 +45,9 @@ button.accept-policy {
   width: 100%;
   white-space: nowrap;
   line-height: 60px;
+
+}
+
+footer p{
+  color: #f2f2f2;
 }
